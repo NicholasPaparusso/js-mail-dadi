@@ -1,0 +1,61 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+main{
+  background-color: #202C39 ;
+  height: 100vh;
+
+}
+
+.hide{
+  display: none;
+}
+
+h1{
+  color:#F29559 ;
+  font-size: 50px;
+  font-weight:700;
+}
+
+.table{
+  background-color: #a9927d;
+  width: 1000px;
+  height: 500px;
+  position: relative;
+  top: 120px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.play-btn{
+  width: 70px;
+  height: 70px;
+  background-color: #202C39;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+}
+
+small{
+  color: #F29559;
+  font-size: 20px;
+}
+
+.play-btn:hover{
+  box-shadow: 0  0 10px rgba(0, 0, 0, .4);
+  scale: 1.01;
+}
+
+.dice-container-user i {
+  font-size: 70px;
+}
+
+.winner p{
+  font-size: 30px;
+  color: #202C39;
+  font-weight: 700;
+}

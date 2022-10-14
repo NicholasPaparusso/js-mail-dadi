@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap.css' integrity='sha512-tBwPRcI1t+0jTsIMtf//+V1f0xAWHh7pvPE82A2n5FcBrzl6b0LRE6XnxUTRHti59y4Js7z4Wb/zal2HBsVVOQ==' crossorigin='anonymous'/>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css' integrity='sha512-HHsOC+h3najWR7OKiGZtfhFIEzg5VRIPde0kB0bG2QRidTQqf+sbfcxCTB16AcFB93xMjnBIKE29/MjdzXE+qw==' crossorigin='anonymous'/>
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Dice-Game</title>
+</head>
+<body>
+  <main class="">
+    <div class="title d-flex justify-content-center pt-5">
+      <h1> Simple Dice Game </h1>
+    </div>
+    <div class="table .container">
+      <div class="row h-100">
+        <div class="play-btn d-flex align-items-center justify-content-center">
+         <small>Avvia</small>
+        </div>
+        <div class="col-6">
+          <h2 id="user" class="text-center">User</h2>
+          <div class="dice-container-user h-75 d-flex
+          justify-content-center
+          align-items-center">
+            <i id="dice-user-1" class="bi bi-dice-1-fill hide"></i>
+            <i id="dice-user-2" class="bi bi-dice-2-fill hide"></i>
+            <i id="dice-user-3" class="bi bi-dice-3-fill hide"></i>
+            <i id="dice-user-4" class="bi bi-dice-4-fill hide"></i>
+            <i id="dice-user-5" class="bi bi-dice-5-fill hide"></i>
+            <i id="dice-user-6" class="bi bi-dice-6-fill hide"></i>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <h2 id="cpu" class="text-center">Cpu</h2>
+           <div class="dice-container-user h-75 d-flex
+          justify-content-center
+          align-items-center">
+            <i id="dice-cpu-1" class="bi bi-dice-1-fill hide"></i>
+            <i id="dice-cpu-2" class="bi bi-dice-2-fill hide"></i>
+            <i id="dice-cpu-3" class="bi bi-dice-3-fill hide"></i>
+            <i id="dice-cpu-4" class="bi bi-dice-4-fill hide"></i>
+            <i id="dice-cpu-5" class="bi bi-dice-5-fill hide"></i>
+            <i id="dice-cpu-6" class="bi bi-dice-6-fill hide "></i>
+          </div>
+        </div>
+        <div class="winner d-flex
+        justify-content-center
+        align-items-center">
+          <p class=""></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
