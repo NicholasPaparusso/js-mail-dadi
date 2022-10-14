@@ -86,3 +86,6 @@ li .btn:first-of-type:hover{
   background-color: #F2E9E4 !important;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, .2);
 }
+ .disclaimer{
+  font-size: 30px;
+ }
