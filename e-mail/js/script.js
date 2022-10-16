@@ -1,10 +1,9 @@
 const emailList = ['piergiorgetto_farabutti@email.it', 'lola97@email.it','manfredonio_devil_angel91@email.it', '50penny@email.uk', 'emo_nemo_dark_rainbow17@email.it' ];
 const psw =['expsw']
 const openMenu = document.querySelector('#open-login');
-const closeMenu = document.querySelector('#close');
 const loginMenu = document.querySelector('.login-menu');
-const sendInput = document.getElementById('btn')
-
+const sendInput = document.getElementById('btn');
+const closeBtn = document.getElementById('close');
 
 
 
@@ -21,11 +20,10 @@ function check(){
    if (psw.indexOf(pswGiven) < 0) {
       alert ('password errata');
     }
-    if (!(emailList.indexOf(givenEmail)<0 && psw.indexOf(pswGiven) < 0)){
-      alert ('accesso effetuato')
+    if (!(emailList.indexOf(givenEmail)<0) && !(  psw.indexOf (pswGiven) < 0)){
+    alert ('accesso effetuato')
     }
   }
-
 
 openMenu.addEventListener('click', open);
 function open(){
@@ -36,9 +34,10 @@ function open(){
   }
 }
 
-closeMenu.addEventListener('click', close);
-function close(){
-  if(!(loginMenu.classList.contains('hide'))){
-    loginMenu.classList.add('hide');
-  }
+closeBtn.addEventListener('click', closeButton);
+
+function closeButton(){
+ if(!(loginMenu.classList.contains('hide'))){
+  loginMenu.classList.add('hide');
+}
 }
